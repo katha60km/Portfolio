@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ramukumar Protfolio Website</title>
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/eb0801f13a.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 <div id="header">
     <div class="container">
         <nav>
-            <img src="Images/Logo2.png" class="logo">
+            <img src="Images/Logo3.png" class="logo">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
@@ -26,6 +28,129 @@
         </div>
     </div>
 </div>
+<!---------About--------->
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/About.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Recent graduate with excellent research, technical and problem-solving skills.
+                    Detail-oriented and able to learn new concepts quickly. Detail-oriented Se-
+                    curity develops testing protocols to assess network vulnerabilities. Performs
+                    required tests and reports on findings to safeguard company assets and reduce
+                    risk.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experiance')">Experiance</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Technical Support</span><br>Desktop Support, Configuration & Troubleshooting</li>
+                            <li><span>Security Engineer & Penetration Tester</span><br>SIEM Technology, vulnerability Assessment, & Log Analysis</li>
+                            <li><span>Networking</span><br>WAN/LAN Technology, DHCP, DNS, ADDS Configuration </li>
+                            <li><span>Linux</span><br>Using as the main Operating system Capable of writing bash/shell scripts. </li>
+                        
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experiance">
+                        <ul>
+                            <li><span>07/2023 - 11/2023</span><br>Desktop Support Engineer at Sysnet Global Technology, Trivandrum.</li>
+                            <li><span>06/2021 - 05/2023</span><br>Desktop Support Engineer at GMR Technology, Chennai.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2021</span><br>BE - Mechanical Engineering with 7.1CGPA out of 10 </li>
+                            <li><span>2017</span><br>Completed HSC with 72%</li>
+                            <li><span>2015</span><br>Completed SSLC with 67% </li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------Services--------->
+<div id="Services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-windows"></i>
+                <h2>Operating System</h2>
+                <p>All types of Operating System installation & troubleshooting (linux, Windows 10, 11)</p>
+                <!--<a href="#">learn more</a>-->
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <h2>Microsoft Outlook</h2>
+                <p>Configuring, Troubleshooting, Backup & Restore the Microsoft Outlook</p>
+                <!--<a href="#">learn more</a>-->
+            </div>
+            <div>
+                <i class="fa-solid fa-network-wired"></i>
+                <h2>Networking</h2>
+                <p>WAN/LAN Technology and DHCP, DNS & ADDS Configuration</p>
+                <!--<a href="#">learn more</a>-->
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-------------Portfolio---------------
+<div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/"
+            </div>
+        </div>
+    </div>
+</div>
+------------------------------------------>
+<!----------------Contact----------------->
+<div id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>ramukumarvsmi@gmail.com</p>
+                <p>+91 9042223652</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="contact-Right">
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
 
 </body>
 </html>
